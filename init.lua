@@ -29,8 +29,8 @@ vim.opt.relativenumber = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
-vim.opt.backupdir = '$HOME/.nvim/backups/'
-vim.opt.undodir = '$HOME/.nvim/undodir/'
+vim.opt.backupdir = os.getenv 'HOME' .. '.nvim/backups/'
+vim.opt.undodir = os.getenv 'HOME' .. '$HOME/.nvim/undodir/'
 vim.opt.swapfile = false
 vim.opt.autoread = true
 
